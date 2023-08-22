@@ -1,4 +1,4 @@
-import {Component, OnInit} from "@angular/core";
+import {ChangeDetectionStrategy, Component, OnInit} from "@angular/core";
 import {Observable} from "rxjs";
 import {IPostResponseModel} from "../../data/response-models/post.response-model.interface";
 import {PostsService} from "../../data/services/posts.service";
@@ -7,7 +7,8 @@ import {Router} from "@angular/router";
 @Component({
     selector: 'posts-table',
     templateUrl: './posts-table.component.html',
-    styleUrls: ['./styles/posts-table.component.scss']
+    styleUrls: ['./styles/posts-table.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PostsTableComponent implements OnInit {
     public posts$: Observable<IPostResponseModel[]> = new Observable<IPostResponseModel[]>();

@@ -9,6 +9,31 @@
       "email": "dima@dima",
       "password": "$2a$10$DLJCJy6W/c/OYJmjJ/B64.6o1WHCleR48ALkgGGwps6Hh9rKhL6iO",
       "id": 2
+    },
+    {
+      "email": "r@r",
+      "password": "$2a$10$E7w.qo692uE8rbRfCkVSD.5pry9PKUHHS8iwEslW970Y8xFm0fBtq",
+      "id": 3
+    },
+    {
+      "email": "r@b",
+      "password": "$2a$10$t9cK5Ae.tI3JVXQkhCkKI.l6V28hAWmFkafxy8xP.bVuDmGrtojnG",
+      "id": 4
+    },
+    {
+      "email": "r@xn--e1a",
+      "password": "$2a$10$ZmjiL3h59YIFzdRbQ/a1Ju7xWLBApeyzPRT/.MFrX5fgIHjGSoPc2",
+      "id": 5
+    },
+    {
+      "email": "r@u",
+      "password": "$2a$10$Ce31Kqg5ShAz/apFRi1MV.frN2bDvhejLZnI5sVlmFIpeHcD8i6Ka",
+      "id": 6
+    },
+    {
+      "email": "r@p",
+      "password": "$2a$10$5ZdLRloWv2D3Gp2kyglRxeGYMPaBeb0e3kh/s3MMqNHiIPSmm3ZWq",
+      "id": 7
     }
   ]
 }

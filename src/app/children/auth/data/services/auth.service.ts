@@ -21,7 +21,12 @@ export class AuthService {
     }
 
     public register(user: IAuthUserRegisterRequestModel): Observable<IAuthUserResponseModel> {
-        return this._http.post<IAuthUserResponseModel>(`${apiUrlAuth}/register`, user);
+        return this._http.post<IAuthUserResponseModel>(`${apiUrlAuth}/register`, user)
+            .pipe(
+                tap((response: IAuthUserResponseModel) => {
+                    this.setToken(response.accessToken);
+                })
+            );
     }
 
     public login(user: IAuthUserLoginRequestModel): Observable<IAuthUserResponseModel> {

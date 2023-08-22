@@ -1,0 +1,63 @@
+.appointment-info {
+    font-family: Roboto, sans-serif;
+    color: #202124;
+    font-size: 20px;
+    line-height: 28px;
+
+    &__table {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__label {
+        border: 1px solid #A1A1A1;
+        background-color: #D8D8D8;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    &__data {
+        border: 1px solid #A1A1A1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+}
+
+.tooltip {
+    position: relative;
+    border-bottom: 1px dotted black;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    left: 130%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip:hover {
+    background-color: #eaeaea;
+}

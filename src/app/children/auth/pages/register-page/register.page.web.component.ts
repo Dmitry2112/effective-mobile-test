@@ -1,4 +1,4 @@
-import { Component, OnDestroy } from '@angular/core';
+import {ChangeDetectionStrategy, Component, OnDestroy} from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
@@ -11,7 +11,8 @@ import { passwordValidator } from '../../validators/password.validator';
 @Component({
     selector: 'auth-register-page',
     templateUrl: './register.page.web.component.html',
-    styleUrls: ['./styles/register.page.web.component.scss']
+    styleUrls: ['./styles/register.page.web.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class RegisterPageWebComponent implements OnDestroy {
     public registerForm!: FormGroup<IRegisterForm>;

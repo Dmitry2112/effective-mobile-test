@@ -5,12 +5,5 @@ import {Component, OnInit} from '@angular/core';
     templateUrl: './main-layout.component.html',
     styleUrls: ['./styles/main-layout.component.scss']
 })
-export class MainLayoutComponent implements OnInit {
-
-    public loader: boolean = true;
-
-    public ngOnInit(): void {
-        this.loader = false
-    }
-
+export class MainLayoutComponent {
 }

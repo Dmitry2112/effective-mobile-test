@@ -1,0 +1,60 @@
+<!--<div *ngIf="post$ | async as post">-->
+<!--    {{ post.title }}-->
+<!--</div>-->
+<div class="post-card" *ngIf="post$ | async as post">
+    <div class="post-card__body">
+        <div class="post-card__content">
+            <div class="post-card__post-data">
+                <label
+                    class="post-card__label"
+                    for="userId"
+                >
+                    id автора поста
+                </label>
+                <div
+                    class="post-card__data"
+                    id="userId"
+                >
+                    {{ post.userId }}
+                </div>
+                <label
+                    class="post-card__label"
+                    for="id"
+                >
+                    id поста
+                </label>
+                <div
+                    class="post-card__data"
+                    id="id"
+                >
+                    {{ post.id }}
+                </div>
+                <label
+                    class="post-card__label"
+                    for="title"
+                >
+                    Название поста
+                </label>
+                <div
+                    class="post-card__data"
+                    id="title"
+                >
+                    {{ post.title }}
+                </div>
+                <label
+                    class="post-card__label"
+                    for="body"
+                >
+                    Содержание поста
+                </label>
+                <div
+                    class="post-card__data"
+                    id="body"
+                >
+                    {{ post.body }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

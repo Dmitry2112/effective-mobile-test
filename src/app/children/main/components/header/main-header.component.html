@@ -1,8 +1,11 @@
 <header class="header">
     <div class="header__content">
-        <!--        <img src="assets/images/logo.svg" alt="логотип">-->
-        ЛОГОТИП
+        <a class="header__logo" [routerLink]="'/cabinet'">Логотип</a>
+        <div
+            class="header__logout"
+            (click)="logout()"
+        >
+            Выйти
+        </div>
     </div>
-
-    <div>Здеся кнопки логина/логаута</div>
 </header>

@@ -12,6 +12,14 @@
         align-items: center;
         justify-content: center;
     }
+
+    &__logo {
+        font-family: Montserrat Subrayada, sans-serif;
+        font-size: 40px;
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+    }
 }
 
 @media screen and (max-width: 895px) {
@@ -27,6 +35,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+
+        &__logo {
+            font-family: Montserrat Subrayada, sans-serif;
+            font-size: 30px;
         }
     }
 }

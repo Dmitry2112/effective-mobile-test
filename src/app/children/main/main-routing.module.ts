@@ -3,12 +3,11 @@ import {RouterModule, Routes} from "@angular/router";
 import {MainLayoutComponent} from "./layouts/main-layout/main-layout.component";
 import {PostsPageComponent} from "./pages/posts-page/posts-page.component";
 import {PostPageComponent} from "./pages/post-page/post-page.component";
-import {AuthLayoutWebComponent} from "../auth/layuots/auth-layout/auth-layout.web.component";
 
 const routes: Routes = [
     {
         path: '',
-        component: AuthLayoutWebComponent,
+        component: MainLayoutComponent,
         children: [
             {
                 path: '',
@@ -18,13 +17,16 @@ const routes: Routes = [
             {
                 path: 'posts',
                 component: PostsPageComponent,
+            },
+            {
+                path: 'posts',
                 children: [
                     {
                         path: ':id',
                         component: PostPageComponent
                     }
                 ]
-            },
+            }
         ],
     },
 ];

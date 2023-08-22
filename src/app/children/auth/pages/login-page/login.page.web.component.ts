@@ -1,4 +1,4 @@
-import { Component, OnDestroy } from '@angular/core';
+import {ChangeDetectionStrategy, Component, OnDestroy} from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -12,7 +12,8 @@ import { IAuthUserLoginRequestModel } from '../../data/request-models/auth-user-
 @Component({
     selector: 'auth-login-page',
     templateUrl: './login.page.web.component.html',
-    styleUrls: ['./styles/login.page.web.component.scss']
+    styleUrls: ['./styles/login.page.web.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LoginPageWebComponent implements OnDestroy {
     public loginForm!: FormGroup<ILoginForm>;

@@ -1,27 +1,10 @@
-<!--<ng-container *ngIf="posts$ | async as posts">-->
-<!--    <div *ngFor="let post of posts">-->
-<!--        <div>{{post.userId}}</div>-->
-<!--        <div>{{post.id}}</div>-->
-<!--        <div>{{post.title}}</div>-->
-<!--        <div>{{post.body}}</div>-->
-<!--        <hr>-->
-<!--    </div>-->
-<!--</ng-container>-->
-<!--<ng-container *ngIf="posts">-->
-<!--    <div *ngFor="let post of posts">-->
-<!--        <div>{{post.userId}}</div>-->
-<!--        <div>{{post.id}}</div>-->
-<!--        <div>{{post.title}}</div>-->
-<!--        <div>{{post.body}}</div>-->
-<!--        <hr>-->
-<!--    </div>-->
-<!--</ng-container>-->
-<div *ngIf="posts">
-    <div *ngFor="let post of posts">
-        <div>{{post.userId}}</div>
-        <div>{{post.id}}</div>
-        <div>{{post.title}}</div>
-        <div>{{post.body}}</div>
-        <hr>
+<div class="posts">
+    <div class="posts__body">
+        <div class="posts__title">
+            Таблица с постами
+        </div>
+        <div class="posts__content">
+            <posts-table></posts-table>
+        </div>
     </div>
 </div>

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
 import { AbstractControl } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
     selector: 'validation-message',
     styleUrls: ['./styles/message.validation.component.scss'],
     templateUrl: 'message.validation.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
     standalone: true,
     imports: [CommonModule]
 })

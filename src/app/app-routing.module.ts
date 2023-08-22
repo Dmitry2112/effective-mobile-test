@@ -17,10 +17,6 @@ const routes: Routes = [
         path: 'cabinet',
         canActivate: [authGuard],
         loadChildren: () => import('./children/main/main-routing.module').then(module => module.MainRoutingModule),
-    },
-    {
-        path: '**',
-        component: NotFoundComponent
     }
 ];
 

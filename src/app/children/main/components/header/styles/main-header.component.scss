@@ -1,8 +1,10 @@
 .header {
+    position: fixed;
     height: 82px;
     width: 100%;
     padding: 0 44px;
     border-bottom: 1px solid #D9D9D9;
+    z-index: 1000;
     background: white;
 
     &__content {
@@ -10,12 +12,35 @@
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        font-family: Montserrat Subrayada, sans-serif;
+        font-size: 40px;
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+    }
+
+    &__logout {
+        cursor: pointer;
+        border-bottom: black 1px solid;
+        transition: 0.2s;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &:focus {
+            opacity: 0.5;
+        }
     }
 }
 
 @media screen and (max-width: 895px) {
     .header {
+        position: fixed;
         height: 53px;
         width: 100%;
         padding: 8px;
@@ -26,7 +51,12 @@
             width: 100%;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
+        }
+
+        &__logo {
+            font-family: Montserrat Subrayada, sans-serif;
+            font-size: 30px;
         }
     }
 }
